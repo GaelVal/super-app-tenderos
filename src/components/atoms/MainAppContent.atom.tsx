@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ColorsBase from "../../enums/colors-base.enum";
 
 const MainAppContent = styled.main`
     display: flex;

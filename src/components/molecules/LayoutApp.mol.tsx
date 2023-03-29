@@ -12,20 +12,27 @@ const Main = styled.div`
   min-height: 90%;
 `;
 
-const LayoutApp = ({ title, children}: ILayoutProps ) => {
+const LayoutApp = ({ title, children }: ILayoutProps) => {
+  /**
+   * todo: layout of modules privates and menus.
+   */
   return (<BackApp>
-      <MenuAppBar>
-        <TitleAppBar>{APP_TITLE}</TitleAppBar>
-      </MenuAppBar>
-      <MainAppContent>
-        <TopAppBar>
-          {title}
+    {/* menu app */}
+    <MenuAppBar>
+      <TitleAppBar>{APP_TITLE}</TitleAppBar>
+    </MenuAppBar>
+    {/* content */}
+    <MainAppContent>
+      {/* top app bar*/}
+      <TopAppBar>
+        {title}
       </TopAppBar>
+      {/* main content */}
       <Main>
         {children}
       </Main>
-      </MainAppContent>
-    </BackApp>)
+    </MainAppContent>
+  </BackApp>)
 }
 
 export default LayoutApp;
