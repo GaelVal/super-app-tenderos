@@ -1,11 +1,12 @@
-import { APP_TITLE } from "../../configs"
+import BackApp from "../../components/atoms/BackApp.atom"
+import LayoutApp from "../../components/molecules/LayoutApp.mol"
 
 const App = () => {
 
   return (
-    <div>
-      <h3>{APP_TITLE}</h3>
-    </div>
+    <LayoutApp title="Inicio">
+      <h2>contenido</h2>
+    </LayoutApp>
   )
 }
 
